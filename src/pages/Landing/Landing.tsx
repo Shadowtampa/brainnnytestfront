@@ -32,9 +32,10 @@ export const Landing = () => {
       // Lida com a resposta da mutação
       console.log(result.data);
 
-      saveAuthData(result.data.login.jwt, result.data.login.user.role.name);
+      saveAuthData(result.data.login.jwt, result.data.login.user.role.name, result.data.login.user.id);
 
-      alert("DEU CERTO");
+      navigate("/dashboard");
+
     } catch (err) {
       // Lida com o erro
       console.error(err);
@@ -43,13 +44,11 @@ export const Landing = () => {
     }
   };
 
-  
-
   useEffect(() => {
     if (jwt) {
       navigate("/dashboard");
     }
-  }, [jwt, navigate]);
+  });
 
   return (
     <Container>
@@ -65,12 +64,12 @@ export const Landing = () => {
 
             <div>
               <span id='email'>Email</span>
-              <input type='email' placeholder='example@email.com' onChange={(e) => setEmail(e.target.value)}/>
+              <input name="email"  type='email' placeholder='example@email.com' onChange={(e) => setEmail(e.target.value)}/>
             </div>
 
             <div>
               <span id='password'>Senha</span>
-              <input type='password' placeholder='*************' onChange={(e) => setPassword(e.target.value)}/>
+              <input name="password"  type='password' placeholder='*************' onChange={(e) => setPassword(e.target.value)}/>
             </div>
 
 

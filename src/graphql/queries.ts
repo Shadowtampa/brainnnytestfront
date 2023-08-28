@@ -18,3 +18,48 @@ export const LOGIN = gql`
     }
   }
 `;
+
+export const FETCH_ALL_TIMES = gql`
+query{
+  registeredTimes{
+    id
+    created_at
+    user{
+      name
+      id
+    }
+  }
+}`;
+
+export const FETCH_TIMES_FOR_USER = gql`
+  query FetchTimesForUser($userId: ID!) {
+    registeredTimes(where: {
+      user: {
+        id: $userId
+      }
+    }) {
+      id
+      created_at
+      user {
+        name
+        id
+      }
+    }
+  }
+`;
+
+
+export const TIME_CHECK = gql`
+mutation CreateRegisteredTime($input: createRegisteredTimeInput!) {
+  createRegisteredTime(input: $input) {
+    registeredTime {
+      id
+      created_at
+      user {
+        username
+      }
+    }
+  }
+}
+`;
+

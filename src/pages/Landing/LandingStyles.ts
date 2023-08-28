@@ -85,6 +85,8 @@ background: #FFF;
 width: 400px;
 height: 45px;
 flex-shrink: 0;
+
+padding-left: 20px;
 }
 
 #email, #password{

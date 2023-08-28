@@ -10,6 +10,13 @@ font-family: 'Roboto Mono', monospace;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  background-color: #F2F2F2;
+
 }
+
+  body{
+    margin: 0;
+  }
 
 
