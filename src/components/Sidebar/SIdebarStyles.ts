@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 
-export const SideBar = styled.div`
+export const SidebarContainer = styled.div`
 z-index: 99999;
 
 width: 180px;

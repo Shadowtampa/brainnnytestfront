@@ -44,8 +44,6 @@ export const Dashboard = () => {
 
   useEffect(() => {
     if (data) {
-      // Lida com a resposta da query
-      console.log(data.registeredTimes);
 
       setTimes(data.registeredTimes);
 

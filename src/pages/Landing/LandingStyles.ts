@@ -9,8 +9,8 @@ background: radial-gradient(45.56% 37.94% at 33.33% 45.34%, rgba(138, 83, 255, 0
 
 export const Layer = styled.div`
 
-width: 100vw;
-  height: 100vh;
+width: 100%;
+height: 100%;
 
 
 background: rgba(255, 255, 255, 0.70);
@@ -23,7 +23,6 @@ justify-content: center;
 
 export const Greetings = styled.div`
 width: 585px;
-height: 829px;
 flex-shrink: 0;
 
 margin-right: 150px;

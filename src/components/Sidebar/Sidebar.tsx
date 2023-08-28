@@ -1,5 +1,4 @@
-import React from 'react'
-import { SideBar } from './SIdebarStyles'
+import { SidebarContainer } from './SIdebarStyles'
 
 import logo from '../../assets/Group 69.svg';
 import sair from '../../assets/ant-design_logout-outlined.svg';
@@ -23,11 +22,8 @@ export const Sidebar = ({sidebarItems} : ISidebarProps) => {
     navigate("/");
   };
 
-
-
-
   return (
-    <SideBar>
+    <SidebarContainer>
       <img src={logo} width={134} height={31.17} />
 
       {sidebarItems.map((sideBarItem, index) => (
@@ -41,6 +37,6 @@ export const Sidebar = ({sidebarItems} : ISidebarProps) => {
       </button>
 
 
-    </SideBar>
+    </SidebarContainer>
   )
 }

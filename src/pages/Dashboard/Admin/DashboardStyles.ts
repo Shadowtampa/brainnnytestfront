@@ -16,7 +16,7 @@ export const StyledLi = styled.li<{ isLast: boolean }>` // Adicione o tipo para 
   margin-bottom: ${({ isLast }) => (isLast ? '0' : '15px')};
 `;
 
-export const SideBar = styled.div`
+export const Sidebar = styled.div`
   position: fixed; // Fixa o componente no topo da página
   top: 0; // Posição absoluta no topo
   left: 0; // Posição absoluta à esquerda

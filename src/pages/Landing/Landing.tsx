@@ -29,8 +29,6 @@ export const Landing = () => {
         }
       });
 
-      // Lida com a resposta da mutação
-      console.log(result.data);
 
       saveAuthData(result.data.login.jwt, result.data.login.user.role.name, result.data.login.user.id);
 
@@ -54,7 +52,7 @@ export const Landing = () => {
     <Container>
       <Layer>
         <Greetings>
-          <img src={greetingsImage} width={585} height={663} />
+          <img src={greetingsImage} width={425} height={503} />
           <span id='title'>Bem vindo ao PontoGo</span>
           <span id='body'>Aqui você fará toda gestão do <br /> seu sistema de pontos.</span>
         </Greetings>
