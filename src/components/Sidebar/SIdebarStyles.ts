@@ -2,6 +2,8 @@ import { styled } from "styled-components";
 
 
 export const SideBar = styled.div`
+z-index: 99999;
+
 width: 180px;
 height: 1060px;
 flex-shrink: 0;

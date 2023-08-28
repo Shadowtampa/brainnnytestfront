@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
+
+
 position: relative;
 
 display: flex;
@@ -216,3 +219,22 @@ border-radius: 5px;
 
 `;
 
+export const RegistrarPonto = styled.button`
+width: 200px;
+height: 50px;
+flex-shrink: 0;
+
+border-radius: 5px;
+background: var(--principal-color, #330693);
+
+color: var(--white, #FFF);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+border: none;
+
+margin-bottom: 42px;
+`;
